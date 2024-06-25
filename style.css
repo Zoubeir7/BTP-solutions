@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --Blue-Zodiac: #0c2c43;
+    --Tea-Green: #d9e5c4;
+    --Como-Green: #54816d;
+    --Asparagus: #80a470;
+    --Viridian-Green: #3d6b63;
+    --Gossamer: #284f54;
+    --Manatee: #8c9ca4;
+    --Slate-Gray: #7c8c94;
+    --Dark-Slate-Blue: #38586c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+section {
+    margin-top: 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 90%;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 17.3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--Blue-Zodiac);
+
+    z-index: 10;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Blue-Zodiac);
+}
+
+.Logo img {
+    width: 3em;
+}
+
+.menu {
+    display: flex;
+    margin-left: 65%;
+
+
+}
+
+
+
+.menu li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+.menu li a {
+    font-size: 20px;
+    text-decoration: 0;
+    color: white;
+    position: relative;
+    white-space: pre;
+}
+
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: var(--Viridian-Green);
+    transition: 0.7s;
+}
+
+.menu li a:hover::before {
+    width: 100%;
+}
+
+
+
+.menu li a:hover {
+    color: var(--Asparagus);
+}
+
+
+
+
+/* hiro */
+
+.hero {
+
+    height: 90vh;
+    margin: auto;
+    width: 90%;
+    background-image: url(images/1\ -\ Heros.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.title button {
+    width: 140px;
+    border-radius: 5px;
+    background-color: var(--Blue-Zodiac);
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid var(--bleu-c);
+    height: 50px;
+
+}
+
+
+.title button a {
+    color: white;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(12, 44, 67, 0.50);
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    height: 27vh;
+    margin: auto;
+
+
+}
+
+
+.title h2 {
+    color: white;
+    font-size: 2rem;
+}
+
+.title h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+/* Responsivité hiro */
+@media screen and (max-width:767px) {
+
+    .title h2 {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+
+    .title h3 {
+        font-size: 1rem;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+}
+
+
+
+/*         Nos services           */
+#service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#service .contener-service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+
+}
+
+
+#service .contener-service div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1px 5px; */
+    width: 240px;
+    height: 320px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px black;
+    line-height: 1.4;
+
+}
+
+.contener-service .s1 {
+    text-align: left;
+    padding: 0 15px;
+}
+
+.contener-service .s2 {
+    text-align: left;
+    padding: 0 15px;
+}
+
+.contener-service .s3 {
+    text-align: left;
+    padding: 0 15px;
+}
+
+#service .contener-service div img {
+    width: 100%;
+}
+
+
+
+/*       Apropos de nous            */
+
+#aproposdenous {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#aproposdenous .contener-apropos {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 67%;
+    gap: 50px;
+}
+
+.img-group {
+    width: 100%;
+    height: 280px;
+
+}
+
+
+.contener-apropos .text {
+    border: 1px solid var(--Gossamer);
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    height: 30vh;
+    color: black;
+    text-align: left;
+    align-content: start;
+    line-height: 1.5;
+    padding: 40px 30px;
+}
+
+
+.contener-apropos .text p {
+    font-size: 1.6rem;
+}
+
+
+
+/*         Ce que disent les Clients         */
+
+
+#clients {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#clients .contener-clients {
+    display: flex;
+    width: 68%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+#clients .contener-clients .c1 {
+    background-color: var(--Blue-Zodiac);
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 0 7px black;
+    border-radius: 8px;
+    text-align: left;
+    padding: 10px 20px;
+    color: white;
+    margin: 10px;
+
+}
+
+
+
+
+#clients .contener-clients .c1 .rong {
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+}
+
+.c1 img {
+    color: rgba(252, 188, 129, 1);
+    /* font-size: 10px; */
+    width: 20px;
+}
+
+
+
+
+/* Contact Nous */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+#contact .contener-contact {
+    display: flex;
+    width: 68%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#contact .formulaire {
+    background-color: var(--Gossamer);
+    padding: 0 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px black;
+}
+
+
+
+#contact .contener-contact .adress {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.formulaire .input {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 15px;
+
+}
+
+.formulaire label {
+    color: white;
+
+
+}
+
+.input input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 0 var(--whitat);
+    border: 1px solid rgb(182, 182, 178);
+    margin-top: 5px;
+
+}
+
+::-webkit-input-placeholder {
+    padding-left: 10px;
+}
+
+
+
+.input textarea {
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 10px 0 var(--whitat);
+    border: 1px solid rgb(182, 182, 178);
+    resize: none;
+    margin-top: 5px;
+
+}
+
+
+
+.formulaire button {
+    color: white;
+    width: 110px;
+    background-color: var(--Asparagus);
+    border: 1px solid var(--bleu-c);
+    height: 40px;
+    border-radius: 10px;
+    margin: 0 12px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+
+
+.contener-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.adress {
+    padding: 10px;
+}
+
+
+.adress i {
+    color: white;
+    margin: 5px;
+    font-size: 18px;
+}
+
+iframe {
+    border: 2px solid var(--Dark-Slate-Blue);
+    border-radius: 10px;
+}
+
+
+
+/* Avant footer */
+.avant-footer {
+    height: 20vh;
+    background-color: var(--Blue-Zodiac);
+    width: 100%;
+}
+
+.avant-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.mon-address img {
+    width: 3rem;
+
+}
+
+.mon-address h2 {
+    color: white;
+}
+
+.media h2,
+i {
+    color: white;
+
+}
+
+.mon-address p {
+    color: white;
+}
+
+.media img {
+    width: 50px;
+    padding: 10px;
+}
+
+
+
+
+/* Fotter */
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    color: white;
+    background-color: var(--Gossamer);
+    align-content: center;
+}
+
+.social-media i {
+    margin: 10px;
+}
+
+
+
+
+
+
+
+/*--------------------Pour Tablet------------------*/
+
+@media only screen and (max-width: 991px) {
+
+    /* header */
+
+    .toggle_menu {
+        display: flex;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        width: 23px;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 10px 0 white;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 white;
+    }
+
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        width: 23px;
+        background-color: white;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+
+    }
+
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 white;
+    }
+
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 1.5px;
+        width: 23px;
+        background-color: white;
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+
+    }
+
+    header .menu.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Asparagus);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+    }
+
+    header .menu.responsive li {
+        margin: 15px 0;
+    }
+
+    header .menu {
+        display: none;
+        margin: 0;
+    }
+
+    header {
+        padding: 0 25px;
+    }
+
+    .menu li a:hover {
+        color: var(--Blue-Zodiac);
+    }
+
+
+    .Logo img {
+        width: 2.3em;
+    }
+
+
+    /*   Nos service   */
+
+    #service .contener-service {
+        flex-direction: column;
+        row-gap: 50px;
+
+    }
+
+    #service .contener-service div {
+        font-size: 15px;
+        width: 55%;
+        height: auto;
+        padding: 20px 50px;
+    }
+
+    #service .contener-service div img {
+        width: 90%;
+    }
+
+    /*   Aprops de nous   */
+
+    #aproposdenous .contener-apropos {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    #aproposdenous .contener-apropos .text {
+        height: auto;
+
+    }
+
+    /*   Clients   */
+
+    #clients .contener-clients {
+
+        flex-direction: column;
+        row-gap: 20px;
+
+
+    }
+
+    #clients .contener-clients .c1 {
+        height: 250px;
+        width: auto;
+
+    }
+
+    #clients .contener-clients .c1 .rong {
+        width: 70px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+
+    }
+
+
+    /*   contact   */
+    #contact .contener-contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .input input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 570px;
+        height: 30px;
+
+
+    }
+
+    .input textarea {
+        width: 570px;
+
+    }
+
+    .formulaire .btn2 button {
+        height: 30px;
+        width: 90px;
+        font-size: 11px;
+    }
+
+    .carte iframe {
+        align-items: center;
+        justify-content: center;
+        width: 610px;
+        height: 400px;
+
+    }
+
+    /*   Avant fotter  */
+
+    .media i {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+
+}
+
+
+
+
+/*--------------------Pour phone------------------*/
+
+
+@media only screen and (max-width: 767px) {
+
+
+
+    section h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    /*   Nos service   */
+
+    #service .contener-service {
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+
+    #service .contener-service div {
+        font-size: 13px;
+        width: 80%;
+        height: auto;
+        padding: 0 20px 10px;
+    }
+
+    #service .contener-service div img {
+        width: 80%;
+    }
+
+
+    /*   Aprops de nous   */
+
+    #aproposdenous .contener-apropos {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    #aproposdenous .contener-apropos .text {
+        height: 240px;
+
+    }
+
+    #aproposdenous .contener-apropos div {
+        width: auto;
+        padding: 35px 20px;
+        height: auto;
+    }
+
+    #aproposdenous .contener-apropos div p {
+        font-size: 1rem;
+    }
+
+    .img-group {
+        width: 100%;
+        height: auto;
+
+    }
+
+
+    /*   Clients   */
+
+
+    #clients .contener-clients {
+
+        flex-direction: column;
+        row-gap: 5px;
+
+    }
+
+    #clients .contener-clients .c1 {
+        height: 250px;
+        width: auto;
+
+    }
+
+    #clients .contener-clients .c1 .rong {
+        width: 70px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+
+    }
+
+
+    /* Contact */
+
+    #contact .contener-contact {
+        flex-direction: column;
+        row-gap: 20px;
+        width: auto;
+    }
+
+    #contact .contener-contact .form {
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+    .input input {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 330px;
+        height: 30px;
+
+    }
+
+    .input textarea {
+        width: 330px;
+
+    }
+
+    .formulaire .btn2 button {
+        height: 30px;
+        width: 90px;
+        font-size: 11px;
+    }
+
+    .carte iframe {
+        width: 365px;
+        height: 350px;
+    }
+
+    /* Avant footer */
+
+
+    .avant-footer {
+        flex-direction: column;
+    }
+
+
+    .avant-footer {
+        height: 19vh;
+    }
+
+    .mon-address img {
+        width: 2.5rem;
+
+    }
+
+    .mon-address h2 {
+        font-size: 17px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+
+    .mon-address p {
+        font-size: 12px;
+        padding: 5px;
+
+    }
+
+    .media h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .media i {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    /* Avant footer */
+
+    footer p {
+        font-size: 12px;
+    }
+
+
+}

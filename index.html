@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="BTS Solutions, spécialiste en Bâtiment et Travaux Publics (BTP), propose des solutions innovantes et sécurisées pour des infrastructures de haute qualité. Découvrez notre expertise et nos services dédiés à la construction durable.">
+    <meta name="author" content="BTP Solutions">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/BTP.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>BTP-solutions </title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <header>
+        <div class="Logo">
+            <a href="#hero"><img src="images/BTP.webp" alt="Logo du site"></a>
+        </div>
+
+        <!-- <nav> -->
+        <ul class="menu">
+            <li><a href="#hero">Acceuil</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#aproposdenous">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="toggle_menu"></div>
+    </header>
+
+    <!-- le javascriptnavbar -->
+
+    <script>let small_menu = document.querySelector('.toggle_menu')
+        let menu = document.querySelector('.menu')
+
+        small_menu.onclick = function () {
+            small_menu.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }</script>
+
+
+
+    <!-- hero -->
+
+    <section class="hero" id="hero">
+        <div class="title">
+            <h2>Construisons ensemble des infrastructures durables avec BTP Solutions </h2>
+
+            <h3>Expertise
+                qualité
+                innovation au service de vos projets</h3>
+
+
+            <button> <a href="#contact">Contactez-nous</a></button>
+        </div>
+
+    </section>
+
+    <!-- Nos service -->
+    <section id="service">
+
+        <h1>Nos services</h1>
+
+        <div class="contener-service">
+            <div class="s1">
+                <img src="images/service-1.webp" alt="image-service1">
+                <h3>Construction de bâtiments</h3>
+                <p>Des constructions robustes et
+                    esthétiques pour tous vos besoins
+                    résidentiels, commerciaux et
+                    industriels.
+                </p>
+            </div>
+            <div class="s2"><img src="images/service-2.webp" alt="image-service2">
+                <h3>Travaux publics </h3>
+                <p>Des infrastructures publiques fiables et
+                    durables, incluant routes,
+                    ponts et aménagements urbains.
+                </p>
+            </div>
+            <div class="s3"><img src="images/service-3.webp" alt="image-service3">
+                <h3>Rénovation et réhabilitation</h3>
+                <p>
+                    Redonnez vie à vos bâtiments avec nos solutions
+                    de rénovation complètes et innovantes
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Apropos de Nous -->
+    <section id="aproposdenous">
+        <h1>À propos de nous</h1>
+        <div class="contener-apropos">
+            <div class="text">
+                <p>BTP Solutions est une entreprise de Bâtiment et
+                    Travaux Publics dédiée à la réalisation de projets
+                    d'infrastructures de haute qualité. Avec une équipe
+                    d'experts passionnés et expérimentés, nous nous
+                    engageons à fournir des solutions innovantes et
+                    durables pour répondre aux besoins de nos clients.
+            </div>
+            <img src="images/équipe.webp" alt="" class="img-group">
+        </div>
+    </section>
+
+
+    <!-- ce que disent nos clients -->
+
+    <section id="clients">
+
+        <h1>Ce que disent nos clients</h1>
+
+        <div class="contener-clients">
+            <div class="c1"><img src="images/client-2.webp" alt="image-service1" class="rong">
+
+                <h3>wiliam galass</h3>
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <p>Grâce à BTP Solutions, notre nouveau siège social est
+                    un véritable succès. Leur professionnalismeet
+                    leur souci du détail ont été remarquables.
+                     
+                </p>
+            </div>
+            <div class="c1"><img src="images/client-3.webp" alt="image-service1" class="rong">
+                <h3>Kane</h3>
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <p>Les travaux de rénovation de notre école ont été réalisés avec une grande précision <br>et dans les
+                    délais impartis. Merci à toute l'équipe de BTP Solutions.</p>
+            </div>
+            <div class="c1"><img src="images/client-1.webp" alt="image-service1" class="rong">
+                <h3>Seck</h3>
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <img src="images/star.svg" alt="icone-étoile">
+                <p>La nouvelle route construite par BTP Solutions a considérablement
+                    amélioré la circulation dans
+                    notre
+                    commune.Une entreprise que je recommande vivement.</p>
+            </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+        <h1>Contactez-nous</h1>
+
+        <div class="contener-contact">
+
+            <form action="#form" class="formulaire" id="form">
+                <div class="adress"><i> <i class="fa-solid fa-phone"></i>+123 456 7890 </i>
+                    <i> <i class="fa-solid fa-envelope"></i>contact@btpsolutions.com</i>
+                </div>
+
+
+                <div class="input">
+
+                    <label for="Nom">Nom</label>
+                    <input type="text" name="nom" placeholder="Votre nom" id="nom" required>
+                    <div id="errorname"></div>
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Votre email" id="email">
+                    <div id="errorMessage"></div>
+                </div>
+                <div class="input">
+                    <label for="message">Message</label>
+                    <textarea name=" Message" id="essage" cols="30" rows="10" placeholder="Message "
+                        required></textarea>
+                </div>
+
+                <button type="submit">ENVOYER</button>
+            </form>
+
+
+            <div class="carte"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.135044874588!2d6.024839190868691!3d43.14369341080757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9056eeaf9f937%3A0x780f0513064c7692!2sBTP%20France%20Formation%20CACES!5e0!3m2!1sfr!2s!4v1719061716366!5m2!1sfr!2s"
+                    title="lieu de localisation" width="600" height="535" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+
+    </section>
+    <!-- section avant footer -->
+
+    <section class="avant-footer">
+
+        <div class="mon-address"> <a href="#hero"><img src="images/BTP.webp" alt="Logo du site"></a>
+
+        </div>
+
+        <div class="media">
+
+            <a href="https://www.twitter.com/"" "="lien-twitter"><img src="images/twitter.svg" alt="logo-twitter"></a> <a
+                href="https://www.linkdin.com/"" "="lien-linkdin"><img src="images/linkedin.svg" alt="logolinkdin">
+            </a>
+
+        </div>
+    </section>
+
+
+    <!-- Fotter -->
+
+    <footer>
+        <p>&copy; 2005-2024,Tout droit reserver</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

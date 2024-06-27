@@ -278,7 +278,6 @@ header {
 }
 
 #aproposdenous .contener-apropos {
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -809,7 +808,7 @@ footer {
     }
 
     #aproposdenous .contener-apropos .text {
-        height: 240px;
+        height: 200px;
 
     }
 

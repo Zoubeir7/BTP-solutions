@@ -1,6 +1,8 @@
+
 let formulaire = document.getElementById('form');
 
 formulaire.addEventListener('submit', function (e) {
+
     let nom = document.getElementById('nom');
     let rgx_N = /^[a-zA-Z\s]+$/;
     let message = document.getElementById('message');
@@ -22,4 +24,5 @@ formulaire.addEventListener('submit', function (e) {
     } else {
         errorMessage.innerHTML = ''
     }
+
 });

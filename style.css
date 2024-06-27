@@ -30,10 +30,11 @@ body {
 
 section {
     margin-top: 50px;
+
 }
 
 html {
-    scroll-behavior: smooth;
+
     font-size: 90%;
 }
 
@@ -301,8 +302,7 @@ header {
     color: black;
     text-align: left;
     align-content: start;
-    line-height: 1.5;
-    padding: 40px 30px;
+    padding: 40px 40px;
 }
 
 
@@ -374,14 +374,15 @@ header {
     align-items: center;
     width: 100%;
 
+
 }
+
 
 #contact .contener-contact {
     display: flex;
     width: 68%;
     align-items: center;
     justify-content: space-between;
-
 }
 
 #contact .formulaire {
@@ -487,6 +488,11 @@ iframe {
     height: 20vh;
     background-color: var(--Blue-Zodiac);
     width: 100%;
+    margin-top: 0;
+}
+
+.avant-footer section {
+    margin: 0;
 }
 
 .avant-footer {

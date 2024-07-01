@@ -542,6 +542,7 @@ footer {
     background-color: var(--Gossamer);
     align-content: center;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .social-media i {
